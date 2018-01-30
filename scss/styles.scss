@@ -1,0 +1,27 @@
+// theme
+@import 'theme/typography';
+@import 'theme/icons';
+
+//utils
+@import "utils/functions";
+@import "utils/variables";
+@import "utils/mixins";
+
+// base
+@import 'base/base';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// components
+@import 'components/container';
+@import 'components/buttons';
+@import 'components/banner';
+@import 'components/nav';
+@import 'components/menu';
+@import 'components/project';
+@import 'components/icons';
+
+// Pages
+@import 'pages/landing';

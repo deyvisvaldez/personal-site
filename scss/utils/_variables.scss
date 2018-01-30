@@ -1,0 +1,39 @@
+//colors
+$primary-color: #133558;
+$secondary-color: #1BB99B;
+$dark-gray: #999999;
+$white: #FFFFFF;
+$text-color: #727272;
+
+//Fonts
+$main-font: 'Ubuntu', sans-serif;
+$light: 300;
+$normal: 400;
+$bold: 600;
+
+//Font sizes
+$font-size: em(14px);
+$h3-size: $font-size * 1.15;
+$h2-size: $font-size * 1.35;
+$h1-size: $font-size * 1.7;
+
+//Gutter
+$gutter: 1em;
+
+// z.index variables
+$z-index: (
+  tooltip: 100,
+  modal: 500,
+  overlay:700,
+  offcanvas: 1000
+);
+
+// Maximum width display
+$max-width: 1200px;
+
+//Breakpoints
+$x-small: 320px;
+$small: 480px;
+$medium: 768px;
+$large: 1024px;
+$x-large: 1440px;

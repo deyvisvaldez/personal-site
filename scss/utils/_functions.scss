@@ -1,0 +1,19 @@
+//Convert px to em
+@function em($el, $parent: 16px) {
+  @return ($el / $parent) * 1em;
+}
+
+//Convert px to rem
+@function rem($element) {
+  @return ($element/16px) * 1rem;
+}
+
+//get z-index
+@function z-index($val){
+  @return map-get($z-index, $val);
+}
+
+//Get img path
+@function img($img) {
+  @return url('../img/#{$img}');
+}

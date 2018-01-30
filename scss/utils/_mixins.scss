@@ -1,0 +1,7 @@
+//Mixin for media query
+@mixin from($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+

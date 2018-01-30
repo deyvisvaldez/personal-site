@@ -1,0 +1,44 @@
+.main-footer {
+  background: #212121;
+  color: $dark-gray;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.35em;
+  padding: $gutter 0;
+
+  @include from ($medium) {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__name {
+    display: none;
+
+    @include from ($large) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__email {
+    @include from ($medium) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__social-networks {
+    display: none;
+
+    @include from ($medium) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    color: $dark-gray;
+  }
+}

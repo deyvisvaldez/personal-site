@@ -1,0 +1,79 @@
+.about-me {
+  padding-top: 2em;
+  margin-bottom: 2em;
+
+  @include from($medium) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  @include from($large) {
+    padding-top: 4em;
+    margin-bottom: 4em;
+  }
+
+  &__image {
+    border-radius: 5px;
+    margin-bottom: $gutter;
+  }
+
+  &__img-container {
+    @include from($medium) {
+      padding-left: 1em;
+      flex-basis: 50%;
+    }
+  }
+
+  &__content {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: $text-color;
+
+    p {
+      margin-bottom: $gutter;
+    }
+
+    @include from($medium) {
+      padding-right: 1em;
+      flex-basis: 50%;
+    }
+  }
+
+  &__social-networks {
+    margin-left: .5em;
+    font-size: 1.3em;
+
+    a {
+      color: $text-color;
+    }
+  }
+}
+
+.portfolio {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  background: $primary-color;
+
+  @include from($medium) {
+    padding-top: 3em;
+  }
+
+  @include from($large) {
+    padding-top: 4em;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1.3em;
+    color: $dark-gray;
+    margin-bottom: 1.5em;
+
+    @include from($large) {
+      display: none;
+    }
+  }
+}
